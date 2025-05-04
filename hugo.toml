@@ -1,4 +1,4 @@
-baseURL = 'https://skuller7.github.io/urosZ-hugo-site/'
+baseURL = "https://skuller7.github.io/urosZ-hugo-site/"
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "PaperMod"
