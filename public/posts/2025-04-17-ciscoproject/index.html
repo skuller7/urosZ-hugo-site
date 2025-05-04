@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>My New Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Topology Diagrams
+
+
+Multi site deployment featuring Network security
+The project will involve 3 components or domains of my knowledge that is : Operating systems, Cloud and mainly  Networking.
+Just to mention I will not be using any cloud provider in this project but, more cloud related architectures in Data centers and terms that are learned in cloud.
+The sole purpose of this project is to configure and create a multi site deployment environment using real Cisco images hosted on the Eve-ng machine and where the networking emulator is hosted on.
+The project has 2 sites, Site A and Site B.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/2025-04-17-ciscoproject/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2025-04-17-ciscoproject/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="topology-diagrams">Topology Diagrams<a hidden class="anchor" aria-hidden="true" href="#topology-diagrams">#</a></h2>
+<blockquote>
+<p><img alt="Network Topology" loading="lazy" src="/images/topology.PNG"></p></blockquote>
+<h2 id="multi-site-deployment-featuring-network-security">Multi site deployment featuring Network security<a hidden class="anchor" aria-hidden="true" href="#multi-site-deployment-featuring-network-security">#</a></h2>
+<p>The project will involve 3 components or domains of my knowledge that is : Operating systems, Cloud and mainly  Networking.
+Just to mention I will not be using any cloud provider in this project but, more cloud related architectures in Data centers and terms that are learned in cloud.</p>
+<p>The sole purpose of this project is to configure and create a multi site deployment environment using real Cisco images hosted on the Eve-ng machine and where the networking emulator is hosted on.
+The project has 2 sites, Site A and Site B.</p>
+<h2 id="configured-features">Configured Features<a hidden class="anchor" aria-hidden="true" href="#configured-features">#</a></h2>
+<p>For site A i want to implement a Redundant and fault tolerant network design with multiple Switches and just a single Router.
+Both networking infrastructure devices I got from Cisco CML which you do have to pay to obtain the license.
+And we want to configure the following  :</p>
+<ul>
+<li>Configure hostname, Subnet Inital plan,</li>
+<li>VLAN configuration that are divided into multiple Departments ( like HR, IT, DEV).</li>
+<li>VLAN redunant trunking line to establish commnication from the same VLAN&rsquo;s</li>
+<li>Implemented EitherChannel Portchannel 0 configured with redundancy and Security.</li>
+<li>Added Inter Vlan Routing mechanism with Router on a Stick method.</li>
+<li>ROAS has multiple sub interfaces for each VLAN departmant</li>
+<li>Configured Dynamic NAT protcol with ACL rules</li>
+<li>Connctivity between the Sites is eastablished via Static Routing</li>
+</ul>
+<p>This ends and concludes the Site A configration, This is not a real representation of how firms actually work or some corporate network. Much more functinallity, automation, network programmability could be added.
+This is from my view as a CCNA student on how would i implment a Network design.
+For the Site B, i didnt really configure anything special, the Site B could act as fail over if a disaster stucts all the devices are connected just needs to be configured.</p>
+<h3 id="vlan-configuration">VLAN Configuration<a hidden class="anchor" aria-hidden="true" href="#vlan-configuration">#</a></h3>
+<p>To logically segment the network and from one Network i divided it into subnets, so for this
+Vlans were created based on departments.
+This allows devices in th same VLAN to communicate even if they are on the different Switch.
+In this conifiguration i used</p>
+<ul>
+<li>VLAN 10 IT Department subnet is 10.10.0.0/24 -&gt; (VPC1, VPC3)</li>
+<li>VLAN 20 HR Department subnet is 10.20.0.0/24 -&gt; (VPC2)</li>
+<li>VLAN 30 DEV Department subnet is 10.30.0.0/24 -&gt; (VPC4, VPC5)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Switch&gt;en
+</span></span><span style="display:flex;"><span>Switch# conf terminal
+</span></span><span style="display:flex;"><span>Switch<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># hostname SW1 // Configure the name for the switch</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># vlan 10 // Adding vlans command </span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-vlan<span style="color:#f92672">)</span><span style="color:#75715e"># name IT // naming them is optional</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-vlan<span style="color:#f92672">)</span><span style="color:#75715e"># exit</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># interface gigabitEthernet 1/0</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># switchport mode access  </span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># switchport access vlan 10</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># exit</span>
+</span></span></code></pre></div><h3 id="vlan-trunking">VLAN trunking<a hidden class="anchor" aria-hidden="true" href="#vlan-trunking">#</a></h3>
+<p>To be able to send data from one Switch to another between them we need some sort of trunking.
+Trunking allows us to carry traffic to All VLAN&rsquo;s (except the Native one which i configured)
+That is done via a term called <code>Tagging</code>,
+So If we have VPC1 on SW1 and VPC3 on SW2, the line between the switches needs to be configured so that VPC1 can ONLY talk to hosts in his own VLAN. (In our case VPC3)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#interface range gigabitEthernet 0/0-2 // I used mutliple interfaces </span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if-range<span style="color:#f92672">)</span><span style="color:#75715e"># switchport trunk encapsulation dot1q </span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if-range<span style="color:#f92672">)</span><span style="color:#75715e"># switchport mode trunk </span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if-range<span style="color:#f92672">)</span><span style="color:#75715e"># switchport trunk allowed vlan add 10</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if-range<span style="color:#f92672">)</span><span style="color:#75715e"># switchport trunk allowed vlan add 20</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if-range<span style="color:#f92672">)</span><span style="color:#75715e"># switchport trunk allowed vlan add 30</span>
+</span></span></code></pre></div><h3 id="inter-vlan-routing">Inter VLAN Routing<a hidden class="anchor" aria-hidden="true" href="#inter-vlan-routing">#</a></h3>
+<p>In a VLAN bsaed network, devices in different VLANs are logically seperated.
+If they are physically connected to the same switch.
+This means that VPCS in VLAN 10 cannot directly communicate with other VPCS in other VLANS withpout a Layer 3 device.
+The idea of Inter VLAN routing solves this issue or using a method called ROAS.
+ROAS allows us to use sub interfaces instead of using each cable for each VLAN.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Router&gt; enable
+</span></span><span style="display:flex;"><span>Router# configure terminal
+</span></span><span style="display:flex;"><span>Enter configuration commands, one per line.  End with CNTL/Z.
+</span></span><span style="display:flex;"><span>Router<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># hostname R1</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># interface gigabitEthernet 0/1 </span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># no shutdown</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># interface gig0/1.10 //Repeat for each vlan the last 3 commands</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-subif<span style="color:#f92672">)</span><span style="color:#75715e"># encapsulation dot1Q 10</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-subif<span style="color:#f92672">)</span><span style="color:#75715e"># ip address 10.10.0.1 255.255.255.0</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-subif<span style="color:#f92672">)</span><span style="color:#75715e"># exit</span>
+</span></span></code></pre></div><p><img alt="R1 Interface config" loading="lazy" src="/images/R1Interfaces.PNG"></p>
+<h3 id="either-channel">Either channel<a hidden class="anchor" aria-hidden="true" href="#either-channel">#</a></h3>
+<p>To improve Redundancy and fault tolerance over our network, we need to configure Either channel.
+This technology allows us to use muliple interfaces and act as one, this way if one fails due to some kind of disater, others continue to work. (This is called aggregation)
+For Either channel to work it is needed to configure LACP protocol
+Both sites need to be either in Active/Active or Active/Passive</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># interface range gig0/0-2</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config-if-range<span style="color:#f92672">)</span><span style="color:#75715e"># channel-group 1 mode active</span>
+</span></span><span style="display:flex;"><span>SW1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#do show ip interface brief </span>
+</span></span><span style="display:flex;"><span>Port-channel1   unassigned   YES unset    up    up   
+</span></span></code></pre></div><h3 id="dyanmic-nat--acl">Dyanmic NAT + ACL<a hidden class="anchor" aria-hidden="true" href="#dyanmic-nat--acl">#</a></h3>
+<p>So lets start with NAT, this is a protocol that mainly helps us translate the private address from each VLAN&rsquo;s subnet to a public IP address.
+Dynamic NAT simulates accesss to the internet and lets us ping hosts to Site B.
+So Dynamic NAT lets us define a set or pool of public addresses, i used only /30
+An a host on VLAN 10, with a private address get translated in a complex process to a public ad
+<img alt="R1 Public address" loading="lazy" src="/images/public.PNG"></p>
+<p>With NAT, in addidtion i used Access Control list or ACL, to implement some kind of security and define who has access to outside network, who can ping outside nodes.
+ACL isnt all about Controlling access, its also about reshaping the network achitecture based on our liking and what is actually needed.
+For ACL&rsquo;s i only specified the 2 private subnets that are allowed to be translated.
+Other subnets that are not defined will be not cos there is an DENY ALL at the end of ACE.</p>
+<h4 id="here-is-the-configuration-for-both-nat-and-acl">Here is the configuration for both NAT and ACL<a hidden class="anchor" aria-hidden="true" href="#here-is-the-configuration-for-both-nat-and-acl">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>R1&gt;en
+</span></span><span style="display:flex;"><span>R1# conf te
+</span></span><span style="display:flex;"><span>Enter configuration commands, one per line.  End with CNTL/Z.
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># interface gigabitEthernet 0/1</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-subif<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat inside</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-subif<span style="color:#f92672">)</span><span style="color:#75715e"># end</span>
+</span></span><span style="display:flex;"><span>R1# configure terminal
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># interface gigabitEthernet 0/0</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-subif<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat outside</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-subif<span style="color:#f92672">)</span><span style="color:#75715e"># end</span>
+</span></span><span style="display:flex;"><span>R1&gt; enable
+</span></span><span style="display:flex;"><span>R1# configure terminal
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip acess-list standard uki-NAT-ACL</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-std-nacl<span style="color:#f92672">)</span><span style="color:#75715e"># permit 10.10.0.0 0.0.0.255</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-std-nacl<span style="color:#f92672">)</span><span style="color:#75715e"># permit 10.30.0.0 0.0.0.255</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config-std-nacl<span style="color:#f92672">)</span><span style="color:#75715e"># exit</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat pool Our-NAT-Pool 25.10.5.3 25.10.5.6 255.255.255.248</span>
+</span></span><span style="display:flex;"><span>R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat inside source list uki-NAT-ACL pool Our-NAT-Pool</span>
+</span></span></code></pre></div><h4 id="the-picture-below-is-a-command-that-displays-the-utilization-of-nat-pool">The picture below is a command that displays the utilization of NAT pool<a hidden class="anchor" aria-hidden="true" href="#the-picture-below-is-a-command-that-displays-the-utilization-of-nat-pool">#</a></h4>
+<p><a href="/images/NAT-conf.PNG">R1 NAT Pool</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
